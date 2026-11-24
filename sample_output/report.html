@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Network inventory - 192.168.1.0/24</title>
+<style>
+ body { font-family: Segoe UI, Arial, sans-serif; margin: 32px; color: #1f2933; }
+ h1 { margin-bottom: 4px; } .meta { color: #616e7c; margin-bottom: 20px; }
+ .cards { display: flex; gap: 16px; margin-bottom: 24px; }
+ .card { border: 1px solid #d9e2ec; border-radius: 8px; padding: 12px 20px; }
+ .card b { display: block; font-size: 24px; }
+ table { border-collapse: collapse; width: 100%; }
+ th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e4e7eb; }
+ th { background: #f5f7fa; } tr.risk td { background: #fff4e5; }
+</style></head><body>
+<h1>Network inventory</h1>
+<div class="meta">Subnet 192.168.1.0/24 &middot; scanned 2026-11-24 17:14 &middot; 6.4s</div>
+<div class="cards">
+ <div class="card"><b>7</b>devices online</div>
+ <div class="card"><b>3</b>with risky ports open</div>
+</div>
+<table><tr><th>IP address</th><th>Hostname</th><th>Ping</th><th>Open ports</th><th>Review</th></tr>
+<tr class=''><td>192.168.1.1</td><td>router.lan</td><td>1.1 ms</td><td>53/DNS, 80/HTTP, 443/HTTPS</td><td>-</td></tr><tr class='risk'><td>192.168.1.10</td><td>nas-01.lan</td><td>2.3 ms</td><td>22/SSH, 80/HTTP, 443/HTTPS, 445/SMB</td><td>445/SMB</td></tr><tr class='risk'><td>192.168.1.21</td><td>desk-01.lan</td><td>blocked</td><td>135/MS-RPC, 139/NetBIOS, 445/SMB, 3389/RDP</td><td>139/NetBIOS, 445/SMB, 3389/RDP</td></tr><tr class=''><td>192.168.1.35</td><td>printer-xerox.lan</td><td>3.8 ms</td><td>80/HTTP, 443/HTTPS, 9100/Printer</td><td>-</td></tr><tr class=''><td>192.168.1.42</td><td>-</td><td>4.6 ms</td><td>-</td><td>-</td></tr><tr class='risk'><td>192.168.1.50</td><td>switch-core.lan</td><td>1.9 ms</td><td>22/SSH, 23/Telnet, 443/HTTPS</td><td>23/Telnet</td></tr><tr class=''><td>192.168.1.77</td><td>iphone.lan</td><td>12.4 ms</td><td>-</td><td>-</td></tr>
+</table></body></html>

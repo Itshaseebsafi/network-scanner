@@ -1,0 +1,8 @@
+ip,hostname,ping_ms,open_ports,risky_ports
+192.168.1.1,router.lan,1.1,"53/DNS, 80/HTTP, 443/HTTPS",
+192.168.1.10,nas-01.lan,2.3,"22/SSH, 80/HTTP, 443/HTTPS, 445/SMB",445
+192.168.1.21,desk-01.lan,,"135/MS-RPC, 139/NetBIOS, 445/SMB, 3389/RDP",139 445 3389
+192.168.1.35,printer-xerox.lan,3.8,"80/HTTP, 443/HTTPS, 9100/Printer",
+192.168.1.42,,4.6,,
+192.168.1.50,switch-core.lan,1.9,"22/SSH, 23/Telnet, 443/HTTPS",23
+192.168.1.77,iphone.lan,12.4,,
